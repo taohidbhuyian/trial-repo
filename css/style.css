@@ -1,0 +1,343 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&display=swap');
+
+
+/* google fonts logo */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,700;0,900;1,700;1,900&display=swap');
+
+
+
+/* background-color: #99e84a; */
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Titillium Web', sans-serif;
+}
+*, ::after , ::before{
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6,p{
+    color: #666;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.container{
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.col{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.col-6{
+    flex-basis: 50%;
+}
+.col-4{
+    flex-basis: 33.3333%;
+}
+.col-3{
+    flex-basis: 25%;
+}
+.d-flex{
+    display: flex;
+}
+.text-uppercase{
+    text-transform: uppercase;
+}
+.text-primary{
+    color: #99e84a;
+}
+.text-center{
+    text-align: center;
+}
+.text-white{
+    color: #fff;
+}
+.bg-primary{
+    background-color: #99e84a;
+}
+.btn{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-family: 'Titillium Web', sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 18px;
+}
+.btn-lg{
+    padding: 15px 30px;
+}
+.btn-primary{
+    background-color: #99e84a;
+}
+.btn-primary:hover{
+    background-color: #5a8f25;
+    border: 1px solid #5a8f25; 
+}
+.pad-70{
+    padding: 70px 0;
+}
+.section-headder h2{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 30px;
+}
+.section-headder p{
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+/* header part start here */
+
+header{
+    background: url(../img/banner.png);
+    height: 85vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10px;
+    position: relative;
+}
+.logo h1{
+    color: #99e84a;
+    font-size: 35px;
+    font-family: 'Merriweather', serif;
+    margin-top: 5px;
+}
+.header-item{
+    justify-content: space-between;
+}
+.nav{
+    width: 600px;
+    font-family: 'Merriweather', serif;
+}
+.nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+.nav ul li a{
+    color: #fff;
+    padding-bottom: 7px;
+    transition: .3s;
+}
+.nav ul li a:hover{
+    color: #99e84a;
+    border-bottom: 3px solid #99e84a;
+    transition: .3s;
+}
+/* -------header part end here--------- */
+
+
+/*---------banner text part start here---- */
+
+.banner-text {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 85%;
+}
+.banner-text h2 {
+    color: #fff;
+    font-size: 34px;
+    margin-bottom: 7px;
+}
+
+/* --------banner text part end here------ */
+
+
+/* --------about us part start here------ */
+
+
+.about-us-img img{
+    max-width:100%;
+    height: 350px;
+}
+.border-after{
+    position: relative;
+    padding-bottom: 6px;
+}
+.border-after::after{
+    position: absolute;
+    content: "";
+    width: 120px;
+    height: 3px;
+    background: #99e84a;
+    bottom: 0;
+    left: 0;
+}
+.about-us-text i{
+    color: #666;   
+}
+.about-us-text p{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+/* --------about us part end here------ */
+
+
+
+/* --------protfolio part start here------ */
+
+.protfolio-wrapper , .contuct-us-wrapper {
+    background-color: #eee;
+}
+.prot-item{
+    border: 1px solid #fff;
+    margin-bottom: 30px;
+}
+.prot-img img{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 270px;
+}
+.prot-img{
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    background: rgba(0, 0, 0, .5);
+}
+.prot-img:hover .overlay{
+    height: 100%;
+}
+
+.btn-readmore{
+    position: absolute;
+    background-color: transparent;
+    border: 1px solid #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) ;
+    visibility: hidden;
+    transition: .3s;
+}
+.prot-item:hover .btn-readmore{
+    visibility: visible;
+}
+.btn-readmore:hover{
+    background: #5a8f25;
+}
+
+.prot-text{
+    justify-content: space-between;
+    padding: 10px;
+    text-transform: capitalize;
+    background: #fff;
+}
+
+/* --------protfolio part end here------ */
+
+
+/* --------services part start here------ */
+
+.service-item{
+    padding: 40px 15px;
+    border: 1px solid #ddd;
+    margin-bottom: 30px;
+}
+.icon i{
+    color: #99e84a;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.service-after{
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.service-after::after{
+    position: absolute;
+    content: "";
+    width: 120px;
+    height: 3px;
+    background: #ddd;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.btn-readmore-black{
+    background: #222;
+    margin-top: 20px;
+    font-weight: 500;
+}
+.service-item:hover{
+    background: #99e84a;
+}
+.service-item:hover .icon i ,
+.service-item:hover h4,
+.service-item:hover p{
+    color: #fff;
+}
+.service-item:hover .btn-readmore-black{
+    background-color: #fff;
+    color: #666;
+}
+
+
+
+
+/* --------services part end here------ */
+
+/* --------contact us part start here------ */
+
+.form-group{
+    margin-bottom: 10px;
+}
+.form-control{
+    padding: 7px 10px;
+    width: 100%;
+}
+.form-text{
+    width: 100%;
+    resize: vertical;
+    padding: 7px 10px ;
+}
+.btn-submit{
+    float: right;
+}
+
+/* --------contact us part end here------ */
+/* --------footer part start here------ */
+
+footer{
+    background: #99e84a;
+    padding: 5px 0;
+    text-align: center;
+}
+footer h4{
+  color: #fff;
+}
+
+
+
+/* --------footer part end here------ */
